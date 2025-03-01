@@ -25,8 +25,9 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
+<img src='https://github.com/Hotragn/Community-Board/blob/main/recording-demo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<img src='[http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough](https://github.com/Hotragn/Community-Board/blob/main/recording-demo.gif)' />
+
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LiceCap
@@ -63,7 +64,7 @@ During development, several technical challenges were addressed:
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2025] [Hotragn Pettugani]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
