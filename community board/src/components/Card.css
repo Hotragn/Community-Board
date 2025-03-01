@@ -1,0 +1,132 @@
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px var(--card-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--card-background);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-image {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .card:hover .card-image img {
+    transform: scale(1.05);
+  }
+  
+  .category-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+  }
+  
+  .card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    font-size: 1.3rem;
+  }
+  
+  .card-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: var(--details-color);
+  }
+  
+  .card-details p {
+    margin: 0;
+  }
+  
+  .description {
+    color: var(--description-color);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: var(--button-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+  }
+  
+  .button:hover {
+    background-color: var(--button-hover);
+  }
+  
+  /* Category colors remain the same */
+  .convention .category-tag {
+    background-color: #e74c3c;
+  }
+  
+  .screening .category-tag {
+    background-color: #3498db;
+  }
+  
+  .workshop .category-tag {
+    background-color: #2ecc71;
+  }
+  
+  .meetup .category-tag {
+    background-color: #f39c12;
+  }
+  
+  .competition .category-tag {
+    background-color: #9b59b6;
+  }
+  
+  .release .category-tag {
+    background-color: #1abc9c;
+  }
+  
+  .exhibition .category-tag {
+    background-color: #e67e22;
+  }
+  
+  @media (max-width: 768px) {
+    .card-details {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  

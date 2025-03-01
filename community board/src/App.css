@@ -1,0 +1,181 @@
+/* :root {
+  --background-color: #f5f5f5;
+  --text-color: #333;
+  --card-background: white;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --header-color: #6a3de8;
+  --subheader-color: #666;
+  --button-color: #6a3de8;
+  --button-hover: #5429d0;
+  --description-color: #555;
+  --details-color: #666;
+}
+
+[data-theme='dark'] {
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --card-background: #1e1e1e;
+  --card-shadow: rgba(0, 0, 0, 0.4);
+  --header-color: #9d7aff;
+  --subheader-color: #b0b0b0;
+  --button-color: #8257ff;
+  --button-hover: #9d7aff;
+  --description-color: #b0b0b0;
+  --details-color: #a0a0a0;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-color: var(--card-background);
+  transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  transition: background-color 0.3s ease;
+}
+
+header {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+header h1 {
+  color: var(--header-color);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header h2 {
+  color: var(--subheader-color);
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.theme-toggle-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.theme-toggle {
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: var(--button-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  header h2 {
+    font-size: 1rem;
+  }
+  
+  .theme-toggle-container {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .theme-toggle {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  
+} */
+:root {
+  --background-color: #f5f5f5;
+  --text-color: #333;
+  --card-background: white;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --header-color: #6a3de8;
+  --subheader-color: #666;
+  --button-color: #6a3de8;
+  --button-hover: #5429d0;
+  --description-color: #555;
+  --details-color: #666;
+  --overlay-opacity: 0.85;
+}
+
+[data-theme='dark'] {
+  --background-color: rgba(18, 18, 18, 0.9);
+  --text-color: #e0e0e0;
+  --card-background: #1e1e1e;
+  --card-shadow: rgba(0, 0, 0, 0.4);
+  --header-color: #9d7aff;
+  --subheader-color: #b0b0b0;
+  --button-color: #8257ff;
+  --button-hover: #9d7aff;
+  --description-color: #b0b0b0;
+  --details-color: #a0a0a0;
+  --overlay-opacity: 0.92;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: url('https://wallpaper-house.com/data/out/5/wallpaper2you_68109.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background-color);
+  opacity: var(--overlay-opacity);
+  z-index: -1;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
